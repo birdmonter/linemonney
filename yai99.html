@@ -1,0 +1,2237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <title> กรุณารอสักครู่</title>
+  </head>
+  <body>
+  <p> <p> <p>
+<center> . . . . . กำลังโหลด . . . . .
+<BR><BR>กรุณารอสักครู่
+  </p></p></p><p> นะจ๊ะ</p> </center>
+
+      <script>
+        window.onload = function(e) {
+          liff.init(
+            {
+              liffId: "1654347066-Yd7O2pRQ"
+            },
+            function() {
+              if (liff.isLoggedIn()) {
+                dolink();
+              } else {
+                liff.login();
+              }
+            }
+          );
+          
+   function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}          
+  //เริ่มฟังชั่น
+ 
+         function dolink(){
+            var hof = getParameterByName("refer")
+
+//----เริ่ม Project -- shareTargetPicker---------
+
+
+//------- เริ่ม แบบฝึกหัดที่ 1 ------
+
+                        if(hof === "mm1"){
+                          var a = prompt("ใส่ข้อความอวยพร")
+                          liff.shareTargetPicker([{
+                "type": "flex",
+                "altText": "สวัสดีขอให้มั่งมีศรีสุข เจริญๆเทอญ",
+                "contents":
+
+//--เริ่มโค้ด JSON -----------
+
+ {
+  "type": "bubble",
+  "size": "giga",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://dl.dropbox.com/s/iq8jgzgon3bziyo/giphy%20%2874%29.png",
+            "size": "full",
+            "aspectMode": "cover",
+            "animated": true,
+            "aspectRatio": "3:4"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": a,
+                "align": "center",
+                "wrap": true,
+                "weight": "bold"
+              }
+            ]
+          }
+        ],
+        "backgroundColor": "#ffff0011"
+      }
+    ],
+    "paddingAll": "0px",
+    "action": {
+      "type": "uri",
+      "label": "action",
+      "uri": "https://line.me/R/ti/p/%40dhf1564b"
+    }
+  }
+}                        
+//--จบโค้ด JSON-----------
+          }
+             ]).then(function(){
+                 swal.fire({
+                   title:'สำเร็จ',
+                   text:'ดำเนินการส่งเรียบร้อย',
+                   type:'success',
+                   onClose:() => {
+                     liff.closeWindow();
+                    }
+                  });
+              })              
+           }                 
+
+//------- จบ แบบฝึกหัดที่ 1 -------
+  //------- mm2 ตัวแปร -------
+
+                        if(hof === "mm2"){
+						var a = prompt("กรุณาใส่ข้อความที่ต้องการส่ง")
+						
+                          liff.sendMessages([{
+                "type": "flex",
+                "altText": "ขอให้มั่งมีศรีสุข โชคดีตลอดไป",
+                "contents":
+
+//-------------
+{
+  "type": "bubble",
+  "size": "giga",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://dl.dropbox.com/s/iq8jgzgon3bziyo/giphy%20%2874%29.png",
+            "size": "full",
+            "aspectMode": "cover",
+            "animated": true,
+            "aspectRatio": "3:4"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": a,
+                "align": "center",
+                "wrap": true,
+                "weight": "bold"
+              }
+            ]
+          }
+        ],
+        "backgroundColor": "#ffff0011"
+      }
+    ],
+    "paddingAll": "0px",
+    "action": {
+      "type": "uri",
+      "label": "action",
+      "uri": "https://line.me/R/ti/p/%40dhf1564b"
+    }
+  }
+}
+//-------------
+
+            } ]).then(function(){
+
+                            liff.closeWindow();
+                          })
+                        }
+
+//------- จบ mm2 ตัวแปร----
+          //------- mm3 ตัวแปร -------
+
+                        if(hof === "mm3"){
+						var a = prompt("วันที่")
+						var b = prompt("รางวัลที่1")
+            var c = prompt("รางวัลเลขหน้า 3 ตัว")
+            var d = prompt("รางวัลเลขท้าย 3 ตัว")
+            var e = prompt("เลขท้าย 2 ตัว") 
+                          liff.shareTargetPicker([{
+                "type": "flex",
+                "altText": "ถูกหวยกันบ่น้อพี่น้อง",
+                "contents":
+
+//-------------
+{
+  "type": "bubble",
+  "size": "giga",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "image",
+        "url": "https://sv1.picz.in.th/images/2021/09/08/Ci38Xl.png",
+        "animated": true,
+        "size": "full",
+        "aspectRatio": "16:5",
+        "aspectMode": "cover"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "งวดประจำวันที่"+a,
+            "wrap": true,
+            "align": "center",
+            "weight": "bold",
+            "size": "lg",
+            "color": "#ffffff"
+          }
+        ],
+        "position": "absolute",
+        "paddingAll": "40px"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": []
+      }
+    ],
+    "backgroundColor": "#5ec862",
+    "paddingAll": "0px"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "รางวัลที่ 1",
+            "align": "center",
+            "size": "xl",
+            "weight": "bold",
+            "color": "#ffffff"
+          },
+          {
+            "type": "text",
+            "text": b,
+            "align": "center",
+            "size": "3xl",
+            "weight": "bold",
+            "color": "#ffffff"
+          },
+          {
+            "type": "text",
+            "text": "เงินรางวัล : 6,000,000 บาท",
+            "align": "center",
+            "wrap": true,
+            "color": "#ffffff"
+          }
+        ],
+        "borderColor": "#ffde24",
+        "borderWidth": "normal",
+        "cornerRadius": "md",
+        "backgroundColor": "#ff0000"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "รางวัลเลขหน้า 3 ตัว",
+                "align": "center",
+                "size": "lg",
+                "weight": "bold",
+                "wrap": true,
+                "color": "#ffffff"
+              },
+              {
+                "type": "text",
+                "text": c,
+                "align": "center",
+                "size": "xxl",
+                "weight": "bold",
+                "color": "#ffffff"
+              },
+              {
+                "type": "text",
+                "text": "เงินรางวัล : 4,000 บาท",
+                "align": "center",
+                "wrap": true,
+                "color": "#ffffff"
+              }
+            ],
+            "borderColor": "#ffde24",
+            "borderWidth": "normal",
+            "cornerRadius": "md",
+            "backgroundColor": "#ffde2455"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "รางวัลเลขท้าย 3 ตัว",
+                "align": "center",
+                "size": "lg",
+                "weight": "bold",
+                "wrap": true,
+                "color": "#ffffff"
+              },
+              {
+                "type": "text",
+                "text": d,
+                "align": "center",
+                "size": "xxl",
+                "weight": "bold",
+                "color": "#ffffff"
+              },
+              {
+                "type": "text",
+                "text": "เงินรางวัล : 4,000 บาท",
+                "align": "center",
+                "wrap": true,
+                "color": "#ffffff"
+              }
+            ],
+            "borderColor": "#ffde24",
+            "borderWidth": "normal",
+            "cornerRadius": "md",
+            "backgroundColor": "#a6dcfc55",
+            "margin": "md"
+          }
+        ],
+        "margin": "md"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "รางวัลเลขท้าย 2 ตัว",
+            "align": "center",
+            "size": "xl",
+            "weight": "bold",
+            "color": "#ffffff"
+          },
+          {
+            "type": "text",
+            "text": e,
+            "align": "center",
+            "size": "4xl",
+            "weight": "bold",
+            "color": "#ffffff"
+          },
+          {
+            "type": "text",
+            "text": "เงินรางวัล : 2,000 บาท",
+            "align": "center",
+            "wrap": true,
+            "color": "#ffffff"
+          }
+        ],
+        "borderColor": "#ffde24",
+        "borderWidth": "normal",
+        "cornerRadius": "md",
+        "backgroundColor": "#ff94c955",
+        "margin": "md"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "รางวัลอื่นๆเพิ่มเติม",
+            "size": "lg",
+            "align": "center",
+            "color": "#FFFFFF",
+            "weight": "bold"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://sv1.picz.in.th/images/2021/08/15/2nqFHu.png"
+                  }
+                ],
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "https://bit.ly/2OpHaSv"
+                }
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://dl.dropbox.com/s/py5uycuusv6g1wh/giphy%20%2834%29.png",
+                    "animated": true
+                  }
+                ],
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "https://news.sanook.com/lotto/"
+                }
+              }
+            ]
+          }
+        ],
+        "borderWidth": "normal",
+        "borderColor": "#FBCD53",
+        "cornerRadius": "md",
+        "margin": "md",
+        "backgroundColor": "#52D01733"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://image.makewebeasy.net/makeweb/0/pMrtkmxgt/APNG_images/apng9_05.png?v=202012190947",
+            "size": "full",
+            "aspectMode": "cover",
+            "animated": true,
+            "aspectRatio": "16:14"
+          }
+        ]
+      }
+    ],
+    "paddingAll": "10px",
+    "backgroundColor": "#000000"
+  }
+}
+//-------------
+
+            } ]).then(function(){
+
+                            liff.closeWindow();
+                          })
+                        }
+
+//------- จบ  mm3 ตัวแปร---- 
+          //------- mm4 ตัวแปร -------
+
+                        if(hof === "mm4"){
+						var a = prompt("วันที")
+						var b = prompt("รางวัลที่1")
+            var c = prompt("หน้า3ตัว") 
+            var d = prompt("ท้าย3ตัว") 
+            var e = prompt("ท้าย2ตัว")
+                          liff.sendMessages([{
+                "type": "flex",
+                "altText": "ถูกหวยกันไหมน้อ",
+                "contents":
+
+//-------------
+{
+  "type": "bubble",
+  "size": "giga",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "image",
+        "url": "https://sv1.picz.in.th/images/2021/09/08/Ci38Xl.png",
+        "animated": true,
+        "size": "full",
+        "aspectRatio": "16:5",
+        "aspectMode": "cover"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "งวดประจำวันที่" +a,
+            "wrap": true,
+            "align": "center",
+            "weight": "bold",
+            "size": "lg",
+            "color": "#ffffff"
+          }
+        ],
+        "position": "absolute",
+        "paddingAll": "40px"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": []
+      }
+    ],
+    "backgroundColor": "#5ec862",
+    "paddingAll": "0px"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "รางวัลที่ 1",
+            "align": "center",
+            "size": "xl",
+            "weight": "bold",
+            "color": "#ffffff"
+          },
+          {
+            "type": "text",
+            "text": b,
+            "align": "center",
+            "size": "3xl",
+            "weight": "bold",
+            "color": "#ffffff"
+          },
+          {
+            "type": "text",
+            "text": "เงินรางวัล : 6,000,000 บาท",
+            "align": "center",
+            "wrap": true,
+            "color": "#ffffff"
+          }
+        ],
+        "borderColor": "#ffde24",
+        "borderWidth": "normal",
+        "cornerRadius": "md",
+        "backgroundColor": "#ff0000"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "รางวัลเลขหน้า 3 ตัว",
+                "align": "center",
+                "size": "lg",
+                "weight": "bold",
+                "wrap": true,
+                "color": "#ffffff"
+              },
+              {
+                "type": "text",
+                "text": c,
+                "align": "center",
+                "size": "xxl",
+                "weight": "bold",
+                "color": "#ffffff"
+              },
+              {
+                "type": "text",
+                "text": "เงินรางวัล : 4,000 บาท",
+                "align": "center",
+                "wrap": true,
+                "color": "#ffffff"
+              }
+            ],
+            "borderColor": "#ffde24",
+            "borderWidth": "normal",
+            "cornerRadius": "md",
+            "backgroundColor": "#ffde2455"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "รางวัลเลขท้าย 3 ตัว",
+                "align": "center",
+                "size": "lg",
+                "weight": "bold",
+                "wrap": true,
+                "color": "#ffffff"
+              },
+              {
+                "type": "text",
+                "text": d,
+                "align": "center",
+                "size": "xxl",
+                "weight": "bold",
+                "color": "#ffffff"
+              },
+              {
+                "type": "text",
+                "text": "เงินรางวัล : 4,000 บาท",
+                "align": "center",
+                "wrap": true,
+                "color": "#ffffff"
+              }
+            ],
+            "borderColor": "#ffde24",
+            "borderWidth": "normal",
+            "cornerRadius": "md",
+            "backgroundColor": "#a6dcfc55",
+            "margin": "md"
+          }
+        ],
+        "margin": "md"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "รางวัลเลขท้าย 2 ตัว",
+            "align": "center",
+            "size": "xl",
+            "weight": "bold",
+            "color": "#ffffff"
+          },
+          {
+            "type": "text",
+            "text": e,
+            "align": "center",
+            "size": "4xl",
+            "weight": "bold",
+            "color": "#ffffff"
+          },
+          {
+            "type": "text",
+            "text": "เงินรางวัล : 2,000 บาท",
+            "align": "center",
+            "wrap": true,
+            "color": "#ffffff"
+          }
+        ],
+        "borderColor": "#ffde24",
+        "borderWidth": "normal",
+        "cornerRadius": "md",
+        "backgroundColor": "#ff94c955",
+        "margin": "md"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "รางวัลอื่นๆเพิ่มเติม",
+            "size": "lg",
+            "align": "center",
+            "color": "#FFFFFF",
+            "weight": "bold"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://sv1.picz.in.th/images/2021/08/15/2nqFHu.png"
+                  }
+                ],
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "https://bit.ly/2OpHaSv"
+                }
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://dl.dropbox.com/s/py5uycuusv6g1wh/giphy%20%2834%29.png",
+                    "animated": true
+                  }
+                ],
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "https://news.sanook.com/lotto/"
+                }
+              }
+            ]
+          }
+        ],
+        "borderWidth": "normal",
+        "borderColor": "#FBCD53",
+        "cornerRadius": "md",
+        "margin": "md",
+        "backgroundColor": "#52D01733"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://image.makewebeasy.net/makeweb/0/pMrtkmxgt/APNG_images/apng9_05.png?v=202012190947",
+            "size": "full",
+            "aspectMode": "cover",
+            "animated": true,
+            "aspectRatio": "16:14"
+          }
+        ]
+      }
+    ],
+    "paddingAll": "10px",
+    "backgroundColor": "#000000"
+  }
+}
+//-------------
+
+            } ]).then(function(){
+
+                            liff.closeWindow();
+                          })
+                        }
+
+//------- จบ mm4 ตัวแปร---- 
+          //------- mm5 ตัวแปร -------
+
+                        if(hof === "mm5"){
+						var a = prompt("กรุณาใส่ข้อความที่ต้องการส่ง")
+						
+                          liff.sendMessages([{
+                "type": "flex",
+                "altText": "มวยหูคอมวยตู้สู้เซียน",
+                "contents":
+
+//-------------
+    
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "size": "giga",
+      "body": {
+        "layout": "vertical",
+        "type": "box",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://sv1.picz.in.th/images/2021/08/15/2nqFHu.png"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://image.makewebeasy.net/makeweb/0/pMrtkmxgt/APNG_images/garfield_apng.png?v=202012190947",
+                    "animated": true
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "TIGER 24",
+                    "wrap": true,
+                    "color": "#FBCD53",
+                    "align": "center",
+                    "size": "sm",
+                    "weight": "bold",
+                    "decoration": "underline"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "เปิดให้เล่นล่วงหน้าก่อนใคร หวย มวย บอล  กีฬาอื่นๆทั่วโลก เกมออนไลน์ มวยสเต็ป บอลสเต็ป สเต็ป 2 คู่ก็แทงได้ มวยไล่ลง มวยเสมอ คืนเงิน สเต็ปไม่ตาย การเงินมั่นคง \nแจ้งว่า \"มวยหูคอมวยตู้สู้เซียน\"แนะนำ",
+                        "wrap": true,
+                        "size": "xxs",
+                        "color": "#FFFFFF",
+                        "align": "center"
+                      }
+                    ],
+                    "offsetBottom": "1%"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "CLICK ",
+                        "weight": "bold",
+                        "align": "center",
+                        "color": "#FFFFFF",
+                        "action": {
+                          "type": "uri",
+                          "label": "action",
+                          "uri": "https://bit.ly/2OpHaSv"
+                        }
+                      }
+                    ],
+                    "backgroundColor": "#ff0000",
+                    "borderWidth": "medium",
+                    "borderColor": "#FBCD53",
+                    "cornerRadius": "md",
+                    "offsetBottom": "1%"
+                  }
+                ],
+                "width": "60%"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://sv1.picz.in.th/images/2021/08/15/2nqFHu.png"
+                  },
+                  {
+                    "type": "image",
+                    "url": "https://image.makewebeasy.net/makeweb/0/pMrtkmxgt/APNG_images/garfield_apng.png?v=202012190947",
+                    "animated": true
+                  }
+                ]
+              }
+            ],
+            "background": {
+              "type": "linearGradient",
+              "angle": "0deg",
+              "startColor": "#0000FF",
+              "endColor": "#000000"
+            },
+            "borderWidth": "medium",
+            "borderColor": "#FBCD53",
+            "cornerRadius": "lg"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": a,
+                "wrap": true,
+                "color": "#FBCD53",
+                "size": "md"
+              }
+            ],
+            "margin": "xxl"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://image.makewebeasy.net/makeweb/0/pMrtkmxgt/APNG_images/garfield_apng.png?v=202012190947",
+                    "size": "xxs",
+                    "animated": true
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "มวยหูคอมวยตู้สู้เซียน",
+                    "color": "#FBCD53",
+                    "align": "center",
+                    "wrap": true,
+                    "weight": "bold",
+                    "size": "lg"
+                  },
+                  {
+                    "type": "text",
+                    "text": "โทร 085-3355-502",
+                    "align": "center",
+                    "color": "#FFFFFF",
+                    "size": "xxs",
+                    "weight": "bold",
+                    "margin": "xs"
+                  }
+                ],
+                "width": "70%"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "image",
+                    "url": "https://image.makewebeasy.net/makeweb/0/pMrtkmxgt/APNG_images/garfield_apng.png?v=202012190947",
+                    "size": "xxs",
+                    "animated": true,
+                    "aspectMode": "cover"
+                  }
+                ]
+              }
+            ],
+            "borderWidth": "medium",
+            "borderColor": "#FBCD53",
+            "cornerRadius": "md",
+            "margin": "xl",
+            "background": {
+              "type": "linearGradient",
+              "angle": "0deg",
+              "startColor": "#0000FF",
+              "endColor": "#000000"
+            }
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "ครบเครื่องเรื่องมวยไทย",
+                    "align": "center",
+                    "color": "#FBCD53",
+                    "weight": "bold"
+                  }
+                ],
+                "borderWidth": "light",
+                "borderColor": "#FF6600",
+                "background": {
+                  "type": "linearGradient",
+                  "angle": "0deg",
+                  "startColor": "#000000",
+                  "endColor": "#FF6600"
+                }
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "text",
+                            "text": "ไลน์เสียง ",
+                            "align": "center",
+                            "size": "xs",
+                            "color": "#FBCD53"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "text",
+                            "text": "100/เดือน",
+                            "align": "center",
+                            "size": "xs",
+                            "color": "#FBCD53"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "text",
+                            "text": "มวยหู",
+                            "align": "center",
+                            "size": "xs",
+                            "color": "#FBCD53"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "text",
+                            "text": "500/เดือน",
+                            "align": "center",
+                            "size": "xs",
+                            "color": "#FBCD53"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "text",
+                            "text": "ราชดำเนิน-ลุมพินี",
+                            "color": "#FBCD53",
+                            "size": "xs",
+                            "align": "center"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "text",
+                            "text": "1000/เดือน",
+                            "align": "center",
+                            "color": "#FBCD53",
+                            "size": "xs"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "image",
+                            "url": "https://image.makewebeasy.net/makeweb/0/pMrtkmxgt/APNG_images/youtube1.png?v=202012190947",
+                            "size": "md",
+                            "aspectMode": "cover",
+                            "aspectRatio": "15:3",
+                            "animated": true,
+                            "align": "center",
+                            "action": {
+                              "type": "uri",
+                              "label": "ยูทูป ",
+                              "uri": "https://youtu.be/BFmI1JNxS-0"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "image",
+                            "url": "https://sv1.picz.in.th/images/2021/08/08/2l1iVS.png",
+                            "size": "md",
+                            "aspectMode": "cover",
+                            "aspectRatio": "15:3",
+                            "align": "center",
+                            "animated": true,
+                            "action": {
+                              "type": "uri",
+                              "label": "เพล",
+                              "uri": "https://youtu.be/BFmI1JNxS-0"
+                            }
+                          }
+                        ]
+                      }
+                    ],
+                    "margin": "md"
+                  }
+                ],
+                "margin": "md",
+                "offsetBottom": "5%"
+              }
+            ],
+            "margin": "md",
+            "borderWidth": "light",
+            "borderColor": "#FF6600",
+            "cornerRadius": "xxl"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "button",
+                            "action": {
+                              "type": "uri",
+                              "label": "สมัครไลน์เสียง",
+                              "uri": "https://bit.ly/3nI6xlh"
+                            },
+                            "style": "primary",
+                            "height": "sm",
+                            "color": "#ff0000"
+                          }
+                        ],
+                        "borderWidth": "bold",
+                        "borderColor": "#000000",
+                        "cornerRadius": "lg"
+                      },
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "button",
+                            "action": {
+                              "type": "uri",
+                              "label": "สมัครมวยหู",
+                              "uri": "https://bit.ly/3zkmEYq"
+                            },
+                            "style": "primary",
+                            "height": "sm",
+                            "color": "#ff0000"
+                          }
+                        ],
+                        "borderWidth": "bold",
+                        "borderColor": "#000000",
+                        "cornerRadius": "lg"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "button",
+                            "action": {
+                              "type": "uri",
+                              "label": "เบอร์ติดต่อ",
+                              "uri": "tel:0853355502"
+                            },
+                            "height": "sm",
+                            "style": "primary",
+                            "color": "#ff0000"
+                          }
+                        ],
+                        "borderWidth": "bold",
+                        "borderColor": "#000000",
+                        "cornerRadius": "lg"
+                      },
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "button",
+                            "action": {
+                              "type": "uri",
+                              "label": "เลขบัญชี",
+                              "uri": "https://panumat999.blogspot.com/2020/07/blog-post_26.html?m=1"
+                            },
+                            "height": "sm",
+                            "style": "primary",
+                            "color": "#ff0000"
+                          }
+                        ],
+                        "borderWidth": "bold",
+                        "borderColor": "#000000",
+                        "cornerRadius": "lg"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "button",
+                            "action": {
+                              "type": "uri",
+                              "label": "ข้อมูลมวย",
+                              "uri": "https://bit.ly/3eFzo2i"
+                            },
+                            "height": "sm",
+                            "style": "secondary",
+                            "color": "#ffff00"
+                          }
+                        ],
+                        "borderWidth": "bold",
+                        "borderColor": "#000000",
+                        "cornerRadius": "lg"
+                      },
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "button",
+                            "action": {
+                              "type": "uri",
+                              "label": "ดูบอลสด",
+                              "uri": "https://www.doofootball.com/"
+                            },
+                            "height": "sm",
+                            "style": "primary",
+                            "color": "#FF00FF"
+                          }
+                        ],
+                        "borderWidth": "bold",
+                        "borderColor": "#000000",
+                        "cornerRadius": "lg"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "button",
+                            "action": {
+                              "type": "uri",
+                              "label": "เรตมวย",
+                              "uri": "https://bit.ly/30AZ7ok"
+                            },
+                            "style": "secondary",
+                            "height": "sm",
+                            "color": "#ffff00"
+                          }
+                        ],
+                        "borderWidth": "bold",
+                        "borderColor": "#000000",
+                        "cornerRadius": "lg"
+                      },
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "button",
+                            "action": {
+                              "type": "uri",
+                              "label": "ผลบอล",
+                              "uri": "https://www.888scoreonline.com/thai/index.htm"
+                            },
+                            "height": "sm",
+                            "style": "primary",
+                            "color": "#FF00FF"
+                          }
+                        ],
+                        "borderWidth": "bold",
+                        "borderColor": "#000000",
+                        "cornerRadius": "lg",
+                        "backgroundColor": "#FF00FF"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "button",
+                            "action": {
+                              "type": "uri",
+                              "label": "มวยน่าเล่น",
+                              "uri": "https://panumat998.blogspot.com/2020/06/blog-post.html?m=1"
+                            },
+                            "height": "sm",
+                            "style": "secondary",
+                            "color": "#ffff00"
+                          }
+                        ],
+                        "borderWidth": "bold",
+                        "borderColor": "#000000",
+                        "cornerRadius": "lg"
+                      },
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "button",
+                            "action": {
+                              "type": "uri",
+                              "label": "บอลน่าเล่น",
+                              "uri": "https://www.doofootball.com/analysis"
+                            },
+                            "style": "primary",
+                            "color": "#FF00FF",
+                            "height": "sm"
+                          }
+                        ],
+                        "borderWidth": "bold",
+                        "borderColor": "#000000",
+                        "cornerRadius": "lg"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "button",
+                            "action": {
+                              "type": "uri",
+                              "label": "โปรโทรฟรี ",
+                              "uri": "https://panumat999.blogspot.com/2020/07/blog-post_27.html?m=1"
+                            },
+                            "style": "primary",
+                            "height": "sm",
+                            "color": "#0000FF"
+                          }
+                        ],
+                        "borderWidth": "bold",
+                        "borderColor": "#000000",
+                        "cornerRadius": "lg"
+                      },
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "button",
+                            "action": {
+                              "type": "uri",
+                              "label": "ราคาน้ำมัน+ทอง",
+                              "uri": "https://panumat999.blogspot.com/2020/07/blog-post_9.html?m=1"
+                            },
+                            "style": "primary",
+                            "height": "sm",
+                            "color": "#0000FF"
+                          }
+                        ],
+                        "borderWidth": "bold",
+                        "cornerRadius": "lg",
+                        "borderColor": "#000000"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "action": {
+                          "type": "uri",
+                          "label": "หนังผู้ใหญ่ 18+",
+                          "uri": "https://liff.line.me/1656158367-qPXlDEVB"
+                        },
+                        "height": "sm",
+                        "style": "primary",
+                        "color": "#ff0000"
+                      }
+                    ],
+                    "backgroundColor": "#ff0000",
+                    "borderWidth": "bold",
+                    "borderColor": "#000000",
+                    "cornerRadius": "lg"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "action": {
+                          "type": "uri",
+                          "label": "ดูทีวีออนไลน์",
+                          "uri": "https://liff.line.me/1656158367-PpM85rNe"
+                        },
+                        "height": "sm",
+                        "style": "primary",
+                        "color": "#ff0000"
+                      }
+                    ],
+                    "borderWidth": "bold",
+                    "borderColor": "#000000",
+                    "cornerRadius": "lg"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "image",
+                        "url": "https://image.makewebeasy.net/makeweb/0/pMrtkmxgt/APNG_images/apng_04.png?v=202012190947",
+                        "animated": true,
+                        "size": "5xl"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "margin": "md"
+          }
+        ],
+        "borderWidth": "semi-bold",
+        "borderColor": "#FBCD53"
+      },
+      "styles": {
+        "header": {
+          "backgroundColor": "#000000"
+        },
+        "hero": {
+          "backgroundColor": "#000000"
+        },
+        "body": {
+          "backgroundColor": "#000000"
+        },
+        "footer": {
+          "backgroundColor": "#000000"
+        }
+      }
+    }
+  ]
+}  
+//--จบโค้ด JSON-----------
+
+            } ]).then(function(){
+
+                            liff.closeWindow();
+                          })
+                        }
+
+//------- จบ แบบฝึกหัดที่ mm5-------
+
+//----จบ Project ----------
+            
+          }
+        };
+      </script>
+
+      <script
+        charset="utf-8"
+        src="https://static.line-scdn.net/liff/edge/2/sdk.js"
+      ></script>
+      <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"
+      ></script>
+    </center>
+  </body>
+</html>                            
+    
+  
+  
+          
+        
+  
+         
+                 
+                  
+                              
+              
+            
+               
+               
+                  
+                
+                 
+                   
+                 
+                  
+                   
+                  
+               
+                  
+                  
+                  
+                 
+                 
+                      
+                     
+                     
+                       
+                     
+                     
+                      
+                      
+                    
+                
+                  
+                  
+                
+                    
+                  
+                      
+                       
+                      
+                      
+                       
+                        
+                     
+                        
+                          
+                         
+                        
+                      
+                    
+                 
+                    
+               
+               
+                  
+                  
+                
+               
+              
+              
+             
+             
+              
+                  
+                  
+        
+                  
+                  
+                  
+           
+                    
+                  
+                
+              
+            
+         
+            
+            
+      
+             
+            
+        
+   
+            
+          
+          
+            
+           
+           
+              
+              
+           
+                
+               
+                
+              
+            
+         
+          
+          
+       
+       
+        
+              
+             
+         
+               
+                  
+                 
+        
+                   
+                   
+                  
+               
+              
+              
+              
+               
+              
+                  
+                    
+                
+                   
+                   
+                  
+                 
+                  
+                  
+                 
+                  
+             
+                
+               
+               
+                  
+                
+                 
+                
+            
+              
+              
+             
+             
+             
+                  
+          
+                 
+                
+                   
+           
+                 
+               
+             
+            
+        
+           
+           
+            
+            
+           
+            
+          
+             
+            
+          
+          
+         
+        
+              
+      
+   
+             
+                  
+                  
+             
+                  
+                    
+                 
+                  
+                
+             
+           
+                
+           
+              
+          
+                 
+                
+              
+              
+              
+                
+                
+                  
+                  
+                 
+                  
+                      
+                     
+                     
+                      
+                          
+                         
+                        
+                        
+                        
+                        
+                          
+                        
+                      
+                      
+                     
+               
+                     
+                          
+                        
+                       
+                           
+                          
+                        
+                          
+                       
+                      
+                    
+                  
+                  
+               
+               
+                 
+                      
+                   
+                   
+                     
+                          
+                          
+                         
+                           
+                          
+                            
+                          
+                        
+                      
+                      
+                      
+                       
+                       
+                          
+                        
+                       
+                           
+                         
+                          
+                          
+                        
+                      
+                    
+                  
+                  
+                    
+               
+                 
+                      
+                   
+                     
+                      
+                          
+                            
+                    
+                     
+                          
+                            
+                          
+                        
+                      
+                      
+                    
+                     
+                     
+                     
+                     
+                        
+                        
+                           
+                         
+                          
+                        
+                      
+                   
+                  
+                  
+                   
+                 
+                    
+                      
+                        
+                       
+                      
+                          
+                          
+                         
+                            
+                            
+                            
+                            
+                           
+                         
+                            
+                              
+                              
+                            
+                          
+                        
+                      
+                      
+                     
+                     
+                        
+                          
+                          
+                         
+                            
+                      
+                            
+                           
+                           
+                       
+                           
+                           
+                          
+                            
+                          
+                        
+                      
+                    
+                    
+                  
+                
+             
+                
+             
+            
+           
+           
+       
+            
+          
+          
+           
+           
+            
+              
+               
+               
+              
+                  
+                  
+                   
+                    
+                      
+                     
+                     
+                      
+                          
+                           
+                           
+                            
+                          
+                         
+                            
+                   
+                     
+                           
+                         
+                        
+                        
+                   
+                    
+                      
+                      
+                     
+                     
+                          
+                            
+                         
+                            
+                          
+                           
+                           
+                         
+                          
+                           
+                         
+                        
+                        
+                     
+                      
+                     
+                    
+                  
+                  
+                    
+                 
+                   
+                      
+                        
+                       
+                        
+                          
+                           
+                           
+                           
+                           
+                       
+                            
+                           
+                         
+                           
+                          
+                        
+                      
+                 
+                      
+                      
+                      
+                       
+                       
+                        
+                          
+                         
+                         
+                            
+                            
+                            
+                            
+                         
+                           
+                        
+                          
+                        
+                      
+                     
+                      
+                      
+                    
+                  
+                  
+                  
+                   
+                  
+                      
+                     
+                       
+                     
+                          
+                           
+                          
+                             
+                         
+                         
+                            
+                        
+                         
+                        
+                         
+                        
+                      
+                   
+                      
+                      
+                      
+                     
+                     
+                       
+                          
+                           
+                         
+                            
+                           
+                 
+                           
+                          
+                         
+                      
+                          
+                        
+                    
+             
+                    
+                      
+                    
+                  
+                  
+                    
+                 
+                   
+                      
+                    
+                     
+                       
+                          
+                         
+                           
+                              
+                            
+                           
+                            
+                       
+                         
+                        
+                          
+                        
+                        
+                        
+                      
+                      
+                      
+                      
+                       
+                       
+                          
+                           
+                          
+                            
+                              
+                            
+                        
+                          
+                        
+                          
+                          
+                        
+                    
+                        
+                      
+                      
+                    
+                  
+                  
+                    
+                   
+                 
+                      
+                      
+                   
+                       
+                          
+                            
+                         
+                            
+                           
+                         
+                            
+                            
+                         
+                          
+                         
+                        
+                  
+                     
+                      
+                      
+                      
+                     
+                   
+                        
+                         
+                           
+                            
+                           
+                           
+                      
+                            
+                       
+                         
+                          
+                          
+                        
+                  
+                 
+                        
+                     
+                   
+                  
+                  
+                 
+           
+                
+                      
+                      
+                     
+                       
+                          
+                          
+                         
+                            
+                             
+                  
+                          
+                 
+                         
+           
+                         
+                        
+                  
+                 
+                  
+                      
+                      
+                      
+                       
+                        
+                          
+                           
+                           
+                             
+                        
+                         
+                            
+                         
+                          
+                        
+                         
+                        
+                      
+                        
+                      
+                     
+                   
+                  
+                  
+                  
+               
+                      
+ 
+      
+    
+   
+        
+                       
+        
+           
+             
+                  
+        
+                 
+                  
+                
+                    
+                  
+                      
+                       
+                       
+              
+             
+               
+              
+         
+     
+            
+          
+                 
+                  
+         
+           
+                 
+        
+  
+     
+         
+
+
+                
+                
+                        
