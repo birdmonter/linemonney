@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ส่งข้อมูลสินค้าไป Google Sheet</title>
+</head>
+<body>
+  <h1>ส่งข้อมูลสินค้าไป Google Sheet</h1>
+
+  <form action="send-data.php" method="post">
+    <label for="product">สินค้า</label>
+    <input type="text" name="product" id="product">
+
+    <label for="weight">น้ำหนัก</label>
+    <input type="number" name="weight" id="weight">
+
+    <label for="quantity">จำนวน</label>
+    <input type="number" name="quantity" id="quantity">
+
+    <input type="submit" value="ส่งข้อมูล">
+  </form>
+
+  <script>
+    // ฟังก์ชันรับค่าจากฟอร์ม
+    function getFormData() {
+      var product = document.getElementById("product").value;
+      var weight = document.getElementById("weight").value;
+      var quantity = document.getElementById("quantity").value;
+
+      return {
+        product: product,
+        weight: weight,
+        quantity: quantity
+      };
+    }
+
+    // ฟังก์ชันส่งข้อมูลไป Google Sheet
+    function sendData() {
+      var data = getFormData();
+
+      // เชื่อมต่อกับ Google Sheet
+      var sheet = SpreadsheetApp.openById("YOUR_GOOGLE_SHEET_ID");
+      var sheetValues = sheet.getRange("A1:C").getValues();
+
+      // เพิ่มข้อมูลลง Google Sheet
+      sheetValues.push([data.product, data.weight, data.quantity]);
+
+      // บันทึกข้อมูลลง Google Sheet
+      sheet.getRange("A1:C").setValues(sheetValues);
+
+      // แสดงข้อความแจ้งเตือน
+      alert("ส่งข้อมูลสำเร็จ");
+    }
+
+    // เรียกใช้ฟังก์ชันส่งข้อมูลเมื่อกดปุ่ม Submit
+    document.getElementById("submit").addEventListener("click", sendData);
+  </script>
+</body>
+</html>
