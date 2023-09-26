@@ -12,6 +12,12 @@ function addProduct() {
     }
 }
 
+function deleteProduct(index) {
+    if (index >= 0 && index < productList.length) {
+        productList.splice(index, 1); // ลบรายการที่ตำแหน่ง index
+        displayProducts();
+    }
+}
 function displayProducts() {
     const productListElement = document.getElementById("productList");
     productListElement.innerHTML = "";
@@ -19,6 +25,12 @@ function displayProducts() {
     productList.forEach((product, index) => {
         const li = document.createElement("li");
         li.textContent = `${index + 1}. ${product}`;
+
+        const deleteButton = document.createElement("button");
+        deleteButton.textContent = "ลบ";
+        deleteButton.onclick = () => deleteProduct(index); // เรียกใช้ฟังก์ชัน deleteProduct ด้วยตำแหน่ง index
+        li.appendChild(deleteButton);
+
         productListElement.appendChild(li);
     });
 }
