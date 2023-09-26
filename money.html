@@ -3,36 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>รายรับและรายจ่าย</title>
+    <title>ระบบบันทึกสินค้า</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>รายรับและรายจ่าย</h1>
-    
-    <div id="income">
-        <h2>รายรับ</h2>
-        <ul id="income-list">
-            <!-- รายการรายรับจะถูกเพิ่มที่นี่ -->
-        </ul>
-        <p id="total-income"><li>
-    รายการรายรับ: 500
-    <button onclick="deleteIncome(0)">ลบ</button>
-</li>
-</p>
+    <h1>ระบบบันทึกสินค้า</h1>
+    <div>
+        <label for="product">สินค้า:</label>
+        <input type="text" id="product" placeholder="กรอกชื่อสินค้า">
+        <button onclick="addProduct()">เพิ่มสินค้า</button>
     </div>
-    
-    <div id="expenses">
-        <h2>รายจ่าย</h2>
-        <ul id="expenses-list">
-            <!-- รายการรายจ่ายจะถูกเพิ่มที่นี่ -->
-        </ul>
-        <p id="total-expenses">รวมรายจ่าย: 0</p>
-    </div>
-
-    <div id="balance">
-        <h2>ยอดคงเหลือ</h2>
-        <p id="balance-amount">0</p>
-    </div>
+    <ul id="productList">
+        <!-- รายการสินค้าจะถูกแสดงที่นี่ -->
+    </ul>
 
     <script src="script.js"></script>
 </body>
