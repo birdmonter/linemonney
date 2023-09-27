@@ -47,3 +47,44 @@ function deleteProduct(index) {
         displayProducts();
     }
 }
+
+
+// โหลดข้อมูลที่บันทึกเมื่อหน้าเว็บโหลด
+window.onload = loadSavedData;
+
+function saveData() {
+    const textDataInput = document.getElementById("textData");
+    const textData = textDataInput.value.trim();
+
+    if (textData !== "") {
+        // รับข้อมูลที่มีอยู่ใน Local Storage (หากมี)
+        let savedData = JSON.parse(localStorage.getItem("savedData")) || [];
+
+        // เพิ่มข้อมูลใหม่
+        savedData.push(textData);
+
+        // บันทึกข้อมูลใหม่ลงใน Local Storage
+        localStorage.setItem("savedData", JSON.stringify(savedData));
+
+        // แสดงข้อมูลที่บันทึก
+        loadSavedData();
+
+        // เคลียร์ค่าในช่องข้อมูล
+        textDataInput.value = "";
+    }
+}
+
+function loadSavedData() {
+    const dataList = document.getElementById("dataList");
+    dataList.innerHTML = "";
+
+    // รับข้อมูลที่มีอยู่ใน Local Storage (หากมี)
+    const savedData = JSON.parse(localStorage.getItem("savedData")) || [];
+
+    // แสดงข้อมูลที่บันทึก
+    savedData.forEach((data, index) => {
+        const li = document.createElement("li");
+        li.textContent = `${index + 1}. ${data}`;
+        dataList.appendChild(li);
+    });
+}
