@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>ระบบบันทึกสินค้า</h1>
+       <h1>บันทึกข้อมูลข้อความ</h1>
+    <div>
+        <label for="textData">ข้อมูลข้อความ:</label>
+        <input type="text" id="textData" placeholder="กรอกข้อมูลข้อความ">
+        <button onclick="saveData()">บันทึกข้อมูล</button>
+    </div>
+    <div>
+       <h2>ข้อมูลที่บันทึก</h2>
+        <ul id="dataList">
     <div>
         <label for="product">สินค้า:</label>
         <input type="text" id="product" placeholder="กรอกชื่อสินค้า">
